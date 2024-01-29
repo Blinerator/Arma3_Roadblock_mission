@@ -1,0 +1,66 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class CfgSounds
+
+{
+	sounds[] = {};
+	class radio
+	{
+		name = "radio";
+		sound[] = {"music\long_comp.ogg", 300, 1};
+		titles[] = {};
+	};
+	class radio_arabic
+	{
+		name = "radio_arabic";
+		sound[] = {"music\long_comp_arabic.ogg", 1, 1};
+		titles[] = {};
+	};
+	class god_syria_bashar
+	{
+		name = "god_syria_bashar";
+		sound[] = {"music\god_syria_bashar.ogg", 500, 1};
+		titles[] = {};
+	};
+	class guitar_long
+	{
+		name = "guitar_long";
+		sound[] = {"music\guitar_long_loud.ogg", 500, 1};
+		titles[] = {};
+	};
+	class old_money
+	{
+		name = "old_money";
+		sound[] = {"music\old_money.ogg", 500, 1};
+		titles[] = {};
+	};
+	class skyfall
+	{
+		name = "skyfall";
+		sound[] = {"music\skyfall.ogg", 2, 1};
+		titles[] = {};
+	};
+	class stalker_short
+	{
+		name = "stalker_short";
+		sound[] = {"music\stalker_short.ogg", 300, 1};
+		titles[] = {};
+	};
+};

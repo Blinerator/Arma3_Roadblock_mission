@@ -1,0 +1,1 @@
+execVM "main_loop.sqf";
