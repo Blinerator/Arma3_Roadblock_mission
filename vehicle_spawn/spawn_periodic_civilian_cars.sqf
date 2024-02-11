@@ -5,6 +5,6 @@ publicVariable "time_multiplier";
 while{civ_car_active} do {
 	setTimeMultiplier time_multiplier;
 	execVM "vehicle_spawn\spawn_civilian_car_random.sqf";
-	sleep random[40,45,50];
+	sleep random[50,55,60];
 };
 setTimeMultiplier 1;

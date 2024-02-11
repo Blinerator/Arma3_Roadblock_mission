@@ -1,4 +1,4 @@
-_pos = getMarkerPos "veh_spawn_1";
+_pos = getMarkerPos "veh_spawn_attack";
 _bunker_pos = getMarkerPos "bomb_pos";
 _truck = createVehicle ["rhs_kraz255b1_fuel_msv", _pos, [], 0, "NONE"];
 
@@ -7,7 +7,7 @@ _grp = group _truck;
 _grp setBehaviour "CARELESS";
 _grp setSpeedMode "FULL";
 _grp addWaypoint[_bunker_pos,1];
-_truck say3D ["god_syria_bashar",150,1];
+[_truck,["god_syria_bashar",150,1]] remoteExec ["say3D"];
 
 _sleeptime = 0.25;
 time_since_spawn = 0;

@@ -8,7 +8,7 @@ _vehicles = ["LOP_ISTS_OPF_M998_D_4DR",
 "LOP_SYR_UAZ_Open",
 "LOP_ISTS_OPF_Offroad"];
 
-_pos = getMarkerPos "veh_spawn_1";
+_pos = getMarkerPos "veh_spawn_attack";
 _stop_pos = getMarkerPos "stop_pos";
 
 _car_name = selectRandom _vehicles;

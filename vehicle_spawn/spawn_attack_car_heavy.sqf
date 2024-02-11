@@ -5,7 +5,7 @@ _vehicles = ["LOP_TKA_UAZ_DshKM",
 "LOP_AFR_OPF_Offroad_M2",
 "LOP_TKA_BTR60"];
 
-_pos = getMarkerPos "veh_spawn_1";
+_pos = getMarkerPos "veh_spawn_attack";
 _stop_pos = getMarkerPos "bomb_pos";
 
 _car_name = selectRandom _vehicles;

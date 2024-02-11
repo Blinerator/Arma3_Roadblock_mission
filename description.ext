@@ -1,21 +1,11 @@
+#include "dialogs.hpp"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+respawnOnStart = -1;
+unsafeCVL = 1;
+corpseManagerMode = 1;
+corpseLimit = 20;
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 300;
 
 class CfgSounds
 
@@ -30,7 +20,7 @@ class CfgSounds
 	class radio_arabic
 	{
 		name = "radio_arabic";
-		sound[] = {"music\long_comp_arabic.ogg", 1, 1};
+		sound[] = {"music\middle_eastern.ogg", 1, 1};
 		titles[] = {};
 	};
 	class god_syria_bashar
@@ -54,7 +44,7 @@ class CfgSounds
 	class skyfall
 	{
 		name = "skyfall";
-		sound[] = {"music\skyfall.ogg", 2, 1};
+		sound[] = {"music\skyfall.ogg", 1, 1};
 		titles[] = {};
 	};
 	class stalker_short
@@ -62,5 +52,66 @@ class CfgSounds
 		name = "stalker_short";
 		sound[] = {"music\stalker_short.ogg", 300, 1};
 		titles[] = {};
+	};
+	class intro
+	{
+		name = "intro";
+		sound[] = {"voiceover\intro.ogg", 3, 1};
+		titles[] = {};
+	};
+	class radio_mission
+	{
+		name = "radio_mission";
+		sound[] = {"voiceover\radio_mission.ogg", 3, 1};
+		titles[] = {};
+	};
+	class civ_rating_too_low
+	{
+		name = "civ_rating_too_low";
+		sound[] = {"voiceover\civ_rating_too_low.ogg", 3, 1};
+		titles[] = {};
+	};
+	class too_much_contraband
+	{
+		name = "too_much_contraband";
+		sound[] = {"voiceover\too_much_contraband.ogg", 3, 1};
+		titles[] = {};
+	};
+	class goodend
+	{
+		name = "goodend";
+		sound[] = {"voiceover\goodend.ogg", 3, 1};
+		titles[] = {};
+	};
+	class badend
+	{
+		name = "too_much_contraband";
+		sound[] = {"voiceover\badend.ogg", 3, 1};
+		titles[] = {};
+	};
+	class tips_from_british_guy
+	{
+		name = "tips_from_british_guy";
+		sound[] = {"voiceover\tips_from_british_guy.ogg", 3, 1};
+		titles[] = {};
+	};
+	class sending_cargo_chopper
+	{
+		name = "sending_cargo_chopper";
+		sound[] = {"voiceover\sending_cargo_chopper.ogg", 3, 1};
+		titles[] = {};
+	};
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You successfully held the bridge through the night and kept the locals (relatively) happy.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
 	};
 };
